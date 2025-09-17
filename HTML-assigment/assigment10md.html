@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding External Content</title>
+</head>
+
+<body>
+    <h1>Embedding Content in HTML.</h1>
+    <p>This page shows how to embed videos, articles, and maps directly into an HTML document.</p>
+    <nav>
+        <a href="#youtube">youtube|</a>
+        <a href="#wikipedia">wikipedia|</a>
+        <a href="#maps">maps</a>
+    </nav>
+    <h2 id="youtube">youtube video</h2>
+    <p>Here is a coding tutorial video from YouTube:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=YwiX703ds2a8kBBN"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Description: This video explains HTML basics.</p>
+    <hr>
+    <h2 id="wikipedia">wikipedia article</h2>
+    <p>Here is a Wikipedia article about Computer Science:</p>
+    <iframe src="https://en.wikipedia.org/wiki/Computer_science" width="100%" height="400" frameborder="1">
+    </iframe>
+    <p>Description: This iframe displays the Computer Science article from Wikipedia.</p>
+    <hr>
+    <h2 id="maps">Google Maps Location</h2>
+    <p>Here is the location of CodingGita Campus:</p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.383180105967!2d72.57136231543133!3d23.020497084951227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f24e4b5b0b%3A0x6ff57f2a2c9c1c5b!2sAhmedabad!5e0!3m2!1sen!2sin!4v1633611773278!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+    <p>Description: This is where CodingGita students learn modern MERN stack development.</p>
+    <hr>
+    <a href="#top">back to top</a>
+</body>
+
+</html>
