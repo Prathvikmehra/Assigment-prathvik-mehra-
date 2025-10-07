@@ -1,0 +1,96 @@
+//q1
+var sub1 = 85;
+var sub2 = 78;
+var sub3 = 92;
+var sub4 = 66;
+var sub5 = 80;
+let total = sub1+sub2+sub3+sub4+sub5;
+let percentage = (total/500)*100;
+console.log("Total Marks: "+total);
+console.log("Percentage: "+percentage.toFixed(2)+"%");
+if (percentage >= 90) {
+	console.log("Grade: A");
+} else if (percentage >= 80) {
+	console.log("Grade: B");
+} else if (percentage >= 70) {
+	console.log("Grade: C");
+} else if (percentage >= 60) {
+	console.log("Grade: D");
+} else {
+	console.log("Fail");
+}
+
+//q2
+var units=350;
+var bill=0;
+if (units<=100) {
+	bill=units*5;
+} else if (units <= 300) {
+	bill=100*5+(units-100)*7;
+} else {
+	bill=100*5+200*7+(units-300)*10;
+}
+console.log("Electricity Bill:" + bill);
+
+//q3
+var income = 1200000;
+var tax = 0;
+
+if(income <= 250000){
+	tax = 0;
+} else if (income <= 500000) {
+	tax = 0.05 * (income - 250000);
+} else if (income <= 1000000) {
+	tax = 0.05 * 250000 + 0.20 * (income - 500000);
+} else {
+	tax = 0.05 * 250000 + 0.20 * 500000 + 0.30 * (income - 1000000);
+}
+console.log("Income Tax Payable:" + tax);
+
+//q4
+var age = 20;
+if (age < 0 || age > 120) {
+	console.log("Invalid age");
+} else if (age < 18) {
+	console.log("Not eligible to vote");
+} else {
+	console.log("Eligible to vote");
+}
+
+//q5
+var a = 45, b = 78, c = 32;
+var largest;
+if (a >= b && a >= c) {
+	largest = a;
+} else if (b >= a && b >= c) {
+	largest = b;
+} else {
+	largest = c;
+}
+
+console.log("Largest number is: " + largest);
+
+//q6
+var temp = 28;
+if (temp < 0) {
+	console.log("Freezing Cold");
+} else if (temp <= 15) {
+	console.log("Very Cold");
+} else if (temp <= 25) {
+	console.log("Cold");
+} else if (temp <= 35) {
+	console.log("Warm");
+} else {
+	console.log("Hot");
+}
+
+//q7
+var marksPercentage = 82;
+var familyIncome = 280000;
+if (marksPercentage >= 85 && familyIncome < 300000) {
+	console.log("Full Scholarship");
+} else if (marksPercentage >= 70 && familyIncome < 500000) {
+	console.log("Half Scholarship");
+} else {
+	console.log("Not eligible for scholarship");
+}
